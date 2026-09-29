@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="280" viewBox="0 0 1160 280" role="img" aria-labelledby="title desc">
+  <title id="title">Mathematical operator legend for model diagrams</title>
+  <desc id="desc">Diagram convention: circled plus means elementwise addition; circled cross means matrix multiplication; circled solid dot means Hadamard product. These symbols require a legend.</desc>
+  <rect width="1160" height="280" fill="white"/>
+  <g fill="#202a35" font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="580" y="34" font-size="22">Model diagram operator convention</text>
+    <g id="elementwise-add" transform="translate(200 118)" stroke="black" stroke-width="2.5" fill="white">
+      <circle r="36"/>
+      <path d="M-36 0H36M0-36V36" fill="none"/>
+    </g>
+    <g id="matrix-multiply" transform="translate(580 118)" stroke="black" stroke-width="2.5" fill="white">
+      <circle r="36"/>
+      <path d="M-25.456-25.456L25.456 25.456M-25.456 25.456L25.456-25.456" fill="none"/>
+    </g>
+    <g id="hadamard-product" transform="translate(960 118)" stroke="black" stroke-width="2.5" fill="white">
+      <circle r="36"/>
+      <circle r="13.5" fill="black" stroke="none"/>
+    </g>
+    <text x="200" y="185" font-size="21">Elementwise addition</text>
+    <text x="580" y="185" font-size="21">Matrix multiplication</text>
+    <text x="960" y="185" font-size="21">Hadamard product</text>
+    <text x="200" y="218" font-size="18">A + B</text>
+    <text x="580" y="218" font-size="18">A @ B</text>
+    <text x="960" y="218" font-size="18">A ⊙ B</text>
+    <text x="580" y="263" font-size="15" fill="#63707c">Use explicit labels for Concat, reductions and scalar scaling. State broadcasting and axes.</text>
+  </g>
+</svg>

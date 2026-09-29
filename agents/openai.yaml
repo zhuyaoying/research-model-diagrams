@@ -1,0 +1,4 @@
+interface:
+  display_name: "科研模型绘图"
+  short_description: "绘制有层级、维度清楚、运算准确且有论文参考的科研模型图"
+  default_prompt: "使用 $research-model-diagrams，依据我的最终模型绘制层级对应的总览图与核心算法图，展示张量形态、维度变化和数学运算，并给出论文图号参考。"

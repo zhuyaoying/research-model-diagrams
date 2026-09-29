@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "note": "Synthetic notation examples only; not a research model or measured data.",
+  "tensors": {
+    "X": ["B", 12, 32],
+    "W": [32, 64],
+    "E": ["B", 12, 64],
+    "CLS": ["B", 4, 64],
+    "tokens": ["B", 16, 64],
+    "selected_cls": ["B", 4, 64],
+    "H": ["B", 256],
+    "members": [8, "B", 2],
+    "mean": ["B", 2],
+    "gate": ["B", 1],
+    "weighted": ["B", 2],
+    "anchor": ["B", 2],
+    "gamma": [],
+    "correction": ["B", 2],
+    "out": ["B", 2]
+  },
+  "operations": [
+    {"id": "projection", "op": "matmul", "inputs": ["X", "W"], "output": "E"},
+    {"id": "token_concat", "op": "concat", "inputs": ["CLS", "E"], "axis": 1, "output": "tokens"},
+    {"id": "flatten_cls", "op": "reshape", "inputs": ["selected_cls"], "output": "H"},
+    {"id": "member_mean", "op": "reduce", "inputs": ["members"], "axis": 0, "output": "mean"},
+    {"id": "apply_gate", "op": "hadamard", "inputs": ["mean", "gate"], "broadcast": true, "output": "weighted"},
+    {"id": "scale_residual", "op": "scale", "inputs": ["weighted", "gamma"], "output": "correction"},
+    {"id": "residual_add", "op": "add", "inputs": ["anchor", "correction"], "output": "out"}
+  ]
+}

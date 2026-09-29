@@ -1,5 +1,11 @@
 # 来源与独立性
 
+## CCFA 来源
+
+本项目参考了 [CCFA-Skills](https://github.com/mikubaka88/CCFA-Skills) 的科研工作流与 `ccf-visual-composer` 的方法图组织思路。CCFA-Skills 仓库标注为 MIT License，版权归 Chaoyue Li（2026）所有。
+
+本仓库没有复制 CCFA-Skills 的完整目录、私有材料或其具体源码文件；本 Skill 是围绕个人科研模型绘图需求重新编写的独立实现。如果未来引入 CCFA-Skills 的实质代码或大段文本，应同时保留其 MIT 版权声明，并按原仓库许可证处理。
+
 本 Skill 的工作流理念参考了 CCFA 的科研视觉、文献核验和 Skill 制作实践，尤其包括：
 
 - 先核对方法拓扑，再设计视觉布局；

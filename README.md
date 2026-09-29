@@ -2,7 +2,7 @@
 
 让模型图同时说清楚：**模块层级、数据形态、维度变化与数学运算**。
 
-这是从 CCFA 科研视觉工作流出发、针对反复迭代模型图的需求编写的独立 Skill。适合论文方法图、核心算法图，以及后续在 PowerPoint 中手工重画的参考稿。
+这是从 [CCFA-Skills](https://github.com/mikubaka88/CCFA-Skills) 的科研视觉工作流出发、针对反复迭代模型图的需求编写的独立 Skill。适合论文方法图、核心算法图，以及后续在 PowerPoint 中手工重画的参考稿。
 
 它不绑定某个模型、数据集、固定模块数量或图像生成服务，也不需要安装完整 CCFA。
 
@@ -100,3 +100,7 @@ research-model-diagrams/
 解压发布包后，将 `research-model-diagrams` 内的内容上传到自己的新仓库即可。不要把本机模型项目、私有实验记录或上层工作区一起上传。本包不包含这些内容。
 
 本项目使用 MIT 许可证。来源说明与 CCFA 的关系见 [NOTICE.md](NOTICE.md)。准备发布包不等于已经执行 GitHub 发布。
+
+## 来源与致谢
+
+感谢 CCFA-Skills 提供科研工作流、方法图组织和可编辑视觉产物方面的参考。CCFA-Skills 的许可证和版权信息见 [其 LICENSE 文件](https://github.com/mikubaka88/CCFA-Skills/blob/main/LICENSE)；本项目的独立性说明见 [NOTICE.md](NOTICE.md)。
